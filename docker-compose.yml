@@ -8,7 +8,7 @@ services:
         - NODE_ENV=development
     container_name: excalidraw
     ports:
-      - "3000:80"
+      - "3922:80"
     restart: on-failure
     stdin_open: true
     healthcheck:
@@ -16,10 +16,10 @@ services:
     environment:
       - NODE_ENV=development
     volumes:
-      - ./:/opt/node_app/app:delegated
-      - ./package.json:/opt/node_app/package.json
-      - ./yarn.lock:/opt/node_app/yarn.lock
-      - notused:/opt/node_app/app/node_modules
+      - /data/lhdisk-2tobn6g6/docker/excalidraw:/opt/node_app/app:delegated
+      - /data/lhdisk-2tobn6g6/docker/excalidraw/package.json:/opt/node_app/package.json
+      - /data/lhdisk-2tobn6g6/docker/excalidraw/yarn.lock:/opt/node_app/yarn.lock
+      - /data/lhdisk-2tobn6g6/docker/excalidraw/notused:/opt/node_app/app/node_modules
 
 volumes:
   notused:
