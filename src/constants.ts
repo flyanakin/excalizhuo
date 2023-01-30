@@ -79,6 +79,7 @@ export const FONT_FAMILY = {
   Virgil: 1,
   Helvetica: 2,
   Cascadia: 3,
+  AiYouQiXian: 4, //新加的中文字体
 };
 
 export const THEME = {
